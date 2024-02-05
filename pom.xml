@@ -14,7 +14,11 @@
         <jackson.core.version>2.9.9</jackson.core.version>
         <jackson.annotations.version>2.9.9</jackson.annotations.version>
         <jackson.databind.version>2.9.9.3</jackson.databind.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <!-- To bypass annoying maven warning -->
+        <seleniumhq.selenium>3.141.5</seleniumhq.selenium>
+        <rest-assured>5.4.0</rest-assured>
+        <testng>7.9.0</testng>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -61,66 +65,33 @@
         </dependency>
 
         <!-- Selenium -->
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-server</artifactId>
-            <version>3.9.1</version>
+            <version>${seleniumhq.selenium}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>json-schema-validator</artifactId>
-            <version>5.4.0</version>
+            <version>${rest-assured}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>5.4.0</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.6.3</version> <!-- Check for the latest version on Maven Central -->
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Selenium webdriver dependency -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.6.3</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <scope>compile</scope>
-        </dependency>
+
+        <!-- TESTNG -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.9.0</version>
+            <version>${testng}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.9.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>5.4.0</version>
-            <scope>compile</scope>
-        </dependency>
+
     </dependencies>
 
     <build>
