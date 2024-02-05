@@ -2,8 +2,6 @@ package API.steps.pet;
 
 import API.common.CommonDefinitions;
 import io.restassured.response.Response;
-
-import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 public class GetRequestPet extends CommonDefinitions {
