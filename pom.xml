@@ -17,6 +17,7 @@
         <seleniumhq.selenium>3.141.5</seleniumhq.selenium>
         <rest-assured>5.4.0</rest-assured>
         <testng>7.9.0</testng>
+        <maven-compiler-plugin>3.7.0</maven-compiler-plugin>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -99,7 +100,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>${maven-compiler-plugin}</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
                     <source>${java.version}</source>
