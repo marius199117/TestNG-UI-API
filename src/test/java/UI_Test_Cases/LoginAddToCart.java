@@ -35,7 +35,6 @@ public class LoginAddToCart extends CommonDefinitions {
 
     @AfterClass
     public void tearDown() {
-        // Close the browser
         driver.quit();
     }
 }
