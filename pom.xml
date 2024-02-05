@@ -17,6 +17,7 @@
         <seleniumhq.selenium>3.141.5</seleniumhq.selenium>
         <rest-assured>5.4.0</rest-assured>
         <json-schema-validator>5.4.0</json-schema-validator>
+        <webdrivermanager>5.6.3</webdrivermanager>
         <testng>7.9.0</testng>
         <maven-compiler-plugin>3.7.0</maven-compiler-plugin>
 
@@ -89,7 +90,7 @@
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.6.3</version>
+            <version>${webdrivermanager}</version>
             <scope>test</scope>
         </dependency>
 
